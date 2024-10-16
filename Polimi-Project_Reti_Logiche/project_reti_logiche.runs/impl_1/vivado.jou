@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Mar 16 15:50:03 2022
+# Process ID: 3464
+# Current directory: C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.runs/impl_1
+# Command line: vivado.exe -log project_reti_logiche.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source project_reti_logiche.tcl -notrace
+# Log file: C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.runs/impl_1/project_reti_logiche.vdi
+# Journal file: C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source project_reti_logiche.tcl -notrace

@@ -1,0 +1,327 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Mar 16 15:48:54 2022
+# Process ID: 11180
+# Current directory: C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.runs/synth_1
+# Command line: vivado.exe -log project_reti_logiche.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source project_reti_logiche.tcl
+# Log file: C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.runs/synth_1/project_reti_logiche.vds
+# Journal file: C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source project_reti_logiche.tcl -notrace
+Command: synth_design -top project_reti_logiche -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10612 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:23 . Memory (MB): peak = 281.637 ; gain = 71.406
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'project_reti_logiche' [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:41]
+INFO: [Synth 8-226] default block is never used [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:127]
+WARNING: [Synth 8-614] signal 'byte_in' is read in the process but is not in the sensitivity list [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:76]
+WARNING: [Synth 8-614] signal 'CURRENT_S' is read in the process but is not in the sensitivity list [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:76]
+WARNING: [Synth 8-614] signal 'bit_in' is read in the process but is not in the sensitivity list [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:76]
+WARNING: [Synth 8-614] signal 'byte_out1' is read in the process but is not in the sensitivity list [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:76]
+WARNING: [Synth 8-614] signal 'byte_out2' is read in the process but is not in the sensitivity list [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:76]
+WARNING: [Synth 8-614] signal 'o_en_update' is read in the process but is not in the sensitivity list [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:76]
+WARNING: [Synth 8-614] signal 'o_we_update' is read in the process but is not in the sensitivity list [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:76]
+WARNING: [Synth 8-614] signal 'o_address_update' is read in the process but is not in the sensitivity list [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:76]
+INFO: [Synth 8-256] done synthesizing module 'project_reti_logiche' (1#1) [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:41]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:25 . Memory (MB): peak = 318.953 ; gain = 108.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:26 . Memory (MB): peak = 318.953 ; gain = 108.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:26 . Memory (MB): peak = 318.953 ; gain = 108.723
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'CURRENT_STATO_reg' in module 'project_reti_logiche'
+INFO: [Synth 8-5545] ROM "NEXT_STATO" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "o_address_update" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "o_we_update" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "t" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "x" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "o_en_update" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NEXT_STATO" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NEXT_STATO" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NEXT_STATO" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NEXT_STATO" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NEXT_STATO" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NEXT_STATO" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'o_address_update_reg' [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:72]
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+WARNING: [Synth 8-327] inferring latch for variable 'NEXT_STATO_reg' [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:73]
+WARNING: [Synth 8-327] inferring latch for variable 'NEXT_STATO_reg' [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:73]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+           richiesta_mem |                             0001 |                             0001
+                read_mem |                             0010 |                             0010
+          serializzatore |                             0011 |                             0100
+             convolutore |                             0100 |                             0101
+        parallelizzatore |                             0101 |                             0110
+ richiesta_scrittura_mem |                             0110 |                             0111
+               write_mem |                             0111 |                             1000
+                    done |                             1000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CURRENT_STATO_reg' using encoding 'sequential' in module 'project_reti_logiche'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_NEXT_STATO_reg' [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:73]
+WARNING: [Synth 8-327] inferring latch for variable 'o_done_update_reg' [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:68]
+WARNING: [Synth 8-327] inferring latch for variable 'o_en_update_reg' [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:69]
+WARNING: [Synth 8-327] inferring latch for variable 'o_we_update_reg' [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:70]
+WARNING: [Synth 8-327] inferring latch for variable 'o_data_update_reg' [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:71]
+WARNING: [Synth 8-327] inferring latch for variable 'x_reg' [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:97]
+WARNING: [Synth 8-327] inferring latch for variable 'num_cicli_reg' [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:104]
+WARNING: [Synth 8-327] inferring latch for variable 'next_read_reg' [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:98]
+WARNING: [Synth 8-327] inferring latch for variable 't_reg' [C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:118]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:26 . Memory (MB): peak = 336.688 ; gain = 126.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   9 Input     16 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	  20 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module project_reti_logiche 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   9 Input     16 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	  20 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "o_address_update" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'o_data_update_reg[0]' (LD) to 'o_data_update_reg[7]'
+INFO: [Synth 8-3886] merging instance 'o_data_update_reg[1]' (LD) to 'o_data_update_reg[7]'
+INFO: [Synth 8-3886] merging instance 'o_data_update_reg[2]' (LD) to 'o_data_update_reg[7]'
+INFO: [Synth 8-3886] merging instance 'o_data_update_reg[3]' (LD) to 'o_data_update_reg[7]'
+INFO: [Synth 8-3886] merging instance 'o_data_update_reg[4]' (LD) to 'o_data_update_reg[7]'
+INFO: [Synth 8-3886] merging instance 'o_data_update_reg[5]' (LD) to 'o_data_update_reg[7]'
+INFO: [Synth 8-3886] merging instance 'o_data_update_reg[6]' (LD) to 'o_data_update_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\o_data_update_reg[7] )
+INFO: [Synth 8-3886] merging instance 'o_data_reg[0]' (FDE) to 'o_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'o_data_reg[1]' (FDE) to 'o_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'o_data_reg[2]' (FDE) to 'o_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'o_data_reg[3]' (FDE) to 'o_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'o_data_reg[4]' (FDE) to 'o_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'o_data_reg[5]' (FDE) to 'o_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'o_data_reg[6]' (FDE) to 'o_data_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\o_data_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (o_data_update_reg[7]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (o_data_reg[7]) is unused and will be removed from module project_reti_logiche.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:36 . Memory (MB): peak = 455.500 ; gain = 245.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:36 . Memory (MB): peak = 455.500 ; gain = 245.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:36 . Memory (MB): peak = 456.922 ; gain = 246.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:37 . Memory (MB): peak = 456.922 ; gain = 246.691
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:37 . Memory (MB): peak = 456.922 ; gain = 246.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:37 . Memory (MB): peak = 456.922 ; gain = 246.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:37 . Memory (MB): peak = 456.922 ; gain = 246.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:37 . Memory (MB): peak = 456.922 ; gain = 246.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:37 . Memory (MB): peak = 456.922 ; gain = 246.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    29|
+|3     |LUT1   |    49|
+|4     |LUT2   |   148|
+|5     |LUT3   |     4|
+|6     |LUT4   |    28|
+|7     |LUT5   |    26|
+|8     |LUT6   |    15|
+|9     |FDCE   |     4|
+|10    |FDRE   |    19|
+|11    |LD     |    87|
+|12    |IBUF   |    11|
+|13    |OBUF   |    27|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   449|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:37 . Memory (MB): peak = 456.922 ; gain = 246.691
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 456.922 ; gain = 246.691
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:37 . Memory (MB): peak = 456.922 ; gain = 246.691
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 127 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 87 instances were transformed.
+  LD => LDCE: 87 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:31 . Memory (MB): peak = 525.781 ; gain = 315.551
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Federico/Desktop/project_reti_logiche/project_reti_logiche.runs/synth_1/project_reti_logiche.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 525.781 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 16 15:49:40 2022...

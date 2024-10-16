@@ -1,0 +1,5 @@
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+Failure: Simulation Ended! TEST PASSATO
+Time: 4112500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/Federico/Desktop/project_reti_logiche/Test Bench/Test Bench  Progetto/tb_esempio_2.vhd
+$finish called at time : 4112500 ps : File "C:/Users/Federico/Desktop/project_reti_logiche/Test Bench/Test Bench  Progetto/tb_esempio_2.vhd" Line 145
